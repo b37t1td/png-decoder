@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "eslint . && mocha tests"
+    "test": "npm run lint ; npm run mocha",
+    "mocha": "mocha tests",
+    "lint": "eslint lib tests"
   },
   "author": "Svetlana Linuxenko <linuxenko@yahoo.com> (http://www.linuxenko.pro)",
   "license": "MIT",
